@@ -10,7 +10,7 @@ Security
 3) Logging Of IP on every login.
 
 Design
-1)Login Page is responsive.
-2)Better UI experience
+1) Login Page is responsive.
+2) Better UI experience
 
 
