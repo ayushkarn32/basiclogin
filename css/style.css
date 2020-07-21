@@ -1,1 +1,29 @@
+body{
+			font-family: 'Baloo Da 2', cursive;
+			font-size: 25px;
+		}
+		.form-container{
+						display: flex;
+					/*	text-align: center; */
+						max-width: 350px;
+						align-items: flex-end;
+		}
+		.note-text{
+			font-size: 12px;
+		}
+		.login-avatar{
+			border-radius: 50%;
+			max-width: 250px;
+			max-height: 250px;
+		} 
+		.btn-login
+			{
+				background-color: #2db9e3;
+				color: #f7f9fa;
+				font-weight: bold;
+				border-radius: 25px;
+			}
 
+		.form-email,.form-password,.btn-login{
+			margin-left: 5px;
+		}
