@@ -8,25 +8,33 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
-	<h2>Login Page</h2>
-		<div class="form-container">
-			<form class="form-control" id="form-control" action="#" method="POST">
-				<fieldset>
-					<legend><img src="avatar.png" class="login-avatar" alt="avatar"></img></legend>
-						<div class="form-email">
-							<label for="email" class="lbl-email">Email</label><br>
-							<input type="email" name="email" class="email" id="email" autofocus>
-							<div class="note-text">Your email's are stored securely in our servers.</div>
-						</div>
-						<div class="form-password">
-							<label for="password" class="lbl-password">Password</label><br>
-							<input type="password" name="password" class="password" id="password">
-						</div>
-					<input type="submit" class="btn-login" name="Login" value="Login">
-				</fieldset>
-			</form>
+<center>
+		<div>
+			<h2>Login Page</h2>
 		</div>
-
+	</center>
+<span class="dark-mode">
+	<button class="dark" id="dark" onclick="dark()">Dark Mode</button>
+</span>
+<span class="light-mode">
+	<button class="light" id="light" onclick="light()">Light Mode</button>
+</span>
+		<div class="form-container">			
+				<form class="form-control" id="form-control" action="#" method="POST">
+					<fieldset>
+						<legend><img src="avatar.png" class="login-avatar" alt="avatar"></img></legend>
+							<div class="form-email">
+								<label for="email" class="lbl-email">Email</label><br>
+								<input type="email" name="email" class="email" id="email" autofocus>
+								<div class="note-text">Your email's are stored securely in our servers.</div>
+							</div>
+							<div class="form-password">
+								<label for="password" class="lbl-password">Password</label><br>
+								<input type="password" name="password" class="password" id="password">
+							</div>
+						<input type="submit" class="btn-login" name="Login" value="Login">
+					</fieldset>
+				</form>
+		</div>
 </body>
 </html>
