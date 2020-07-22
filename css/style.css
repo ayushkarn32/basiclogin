@@ -6,6 +6,8 @@ body{
 						display: flex;
 					/*	text-align: center; */
 						max-width: 350px;
+						margin-left: 40%;
+						margin-top: 4%;
 						align-items: flex-end;
 		}
 		.note-text{
@@ -20,10 +22,18 @@ body{
 			{
 				background-color: #2db9e3;
 				color: #f7f9fa;
+				height: 40px;
+				width: 100px;
 				font-weight: bold;
 				border-radius: 25px;
 			}
 
 		.form-email,.form-password,.btn-login{
 			margin-left: 5px;
+		}
+		.dark{
+			display: none;
+		}
+		.light{
+			display: none;
 		}
