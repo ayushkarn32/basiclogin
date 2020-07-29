@@ -29,14 +29,11 @@ if($row['email']==$email && $row['passwd']==$passwd)
 {
     echo "Login Success Welcome ".$row['fname'];
 	$_SESSION['email'] = $email;
-	header( "refresh:1;url=pages/home.php" );
+	header( "refresh:1;url=../home.php" );
 	}
 else
 {
     echo "Failed to login!!";
 }
-
-
-
     
 ?>
