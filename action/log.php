@@ -1,5 +1,6 @@
 <?php
-      session_start();
+      
+	include("auth.php");
       
       $ip =$_SERVER['REMOTE_ADDR'];
       $email=$_SESSION["email"];
