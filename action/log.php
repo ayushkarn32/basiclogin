@@ -18,6 +18,6 @@
     }
     else {
     	echo "some error occured please login again" ;
-    	//header( "refresh:1;url=in.html" );
+    	header( "refresh:1;url=login.html" );
     }
 ?>
