@@ -33,11 +33,12 @@ if($row['email']==$email && $row['passwd']==$passwd)
 {
     echo "Login Success Welcome ".$row['fname'];
 	$_SESSION['email'] = $email;
-	header( "refresh:1;url=../home.php" );
+	header( "refresh:1;url=log.php" );
 	}
 else
 {
     echo "Failed to login!!";
+	header( "refresh:1;url=../index.html" );
 }
     
 ?>
