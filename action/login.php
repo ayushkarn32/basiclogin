@@ -11,14 +11,18 @@ $username = "root";
 $password = "";
 $db = "login";
 $conn = mysqli_connect($servername, $username, $password,$db);
- 
-if($conn){
-//echo "connected";
-}else{
+
+//checking connection
+if($conn)
+{
+//echo "connected"; //this line is commented because we dont want to show anything on successfull connection
+}
+else
+{
 die("error in connection");
 }
 
-
+//query for fetching email and password from database
 $query = "SELECT * FROM `users` WHERE email = '$email' and passwd='$passwd' ";
     $result = mysqli_query($conn,$query) or die(mysql_error());
     $row = $result->fetch_assoc();
