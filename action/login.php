@@ -1,6 +1,7 @@
 <?php
 session_start();
 $email1=$_POST['email'];
+//md5 is a hash function producing a 128-bit hash value
 $email=md5($email1);
 $passwd1=$_POST['password'];
 $passwd=md5($passwd1);
