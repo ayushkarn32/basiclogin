@@ -1,6 +1,1 @@
-Given variables:
-  $servername = "localhost";
-  $username = "root";
-  $password = "";
-  $database = "login";
-  $conn = new mysqli($servername, $username, $password,$db);
+<img src="iplogger.png" alt="img-iplogger">
