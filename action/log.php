@@ -2,7 +2,7 @@
       session_start();
       
       $ip =$_SERVER['REMOTE_ADDR'];
-      $email1=$_SESSION["email"];
+      $email=$_SESSION["email"];
 
 	//database connection
       $servername = "localhost";
@@ -12,12 +12,17 @@
       $conn = mysqli_connect($servername, $username, $password,$db);
          
 	//inserting the users logged value
-
-//here i haven't defined $id because id is primary key in the database and is automatically incremented
-// $date is the currenttimestamp which means whenever ip is logged the date and 
 	
-	$query = "INSERT INTO iplogger VALUES ('$id','$email1','$ip','$date')";
+	$query = "INSERT INTO iplogger VALUES ('','$email','$ip','')";
 	$result = mysqli_query($conn,$query);
+
+	//here i haven't defined $id because id is primary key in the database and is automatically incremented
+	// $date is the currenttimestamp which means whenever ip is logged the date and time gets recorded automatically
+	//the first value i have passed is $id
+	//2nd value is $email which was stored in the form of session variable in login.php
+	//3rd value is the ip address of the visitor
+	//4th value is the $date which is current time stamp
+
     
 //if logged sucessfully you will be redirected to 
     if($result)
