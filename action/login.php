@@ -39,7 +39,7 @@ if($row['email']==$email && $row['passwd']==$passwd)
 else
 {
     echo "Failed to login!!";
-	header( "refresh:1;url=../index.html" );
+	header( "refresh:1;url=../login.html" );
 }
     
 ?>
